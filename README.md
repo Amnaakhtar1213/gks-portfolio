@@ -41,7 +41,7 @@ and **Framer Motion**.
 
 ## Clone the Repository
 ```bash
-git clone 
+git clone https://github.com/Amnaakhtar1213/gks-portfolio.git
 
 
 
