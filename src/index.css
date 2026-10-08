@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-beige-light text-ink font-body;
+  overflow-x: hidden;
+}
+
+::selection {
+  @apply bg-blush text-ink;
+}
+
+.eyebrow {
+  @apply font-mono text-[0.7rem] tracking-[0.18em] uppercase text-sage-ink flex items-center gap-2;
+}
+.eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 1px;
+  @apply bg-sage-ink inline-block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
